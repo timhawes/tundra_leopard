@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/tim/Projects/Kicad/tundra_leopard/tundra_leopard.sch</source>
+    <date>Wed 19 Oct 2016 21:55:12 BST</date>
+    <tool>Eeschema 4.0.4+e1-6308~48~ubuntu16.04.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>tundra_leopard.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="P1">
+      <value>CONN_01X02</value>
+      <footprint>timhawes:POWERPOLE_01X02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5807C1B7</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>CONN_01X02</value>
+      <footprint>timhawes:POWERPOLE_01X02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5807C20B</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>CONN_01X02</value>
+      <footprint>timhawes:POWERPOLE_01X02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5807C25E</tstamp>
+    </comp>
+    <comp ref="P5">
+      <value>CONN_01X02</value>
+      <footprint>timhawes:POWERPOLE_01X02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5807C29A</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>FUSE</value>
+      <footprint>timhawes:KEYSTONE_3557_AUTOMOTIVE_MINI_FUSE</footprint>
+      <libsource lib="device" part="FUSE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5807C2CC</tstamp>
+    </comp>
+    <comp ref="F2">
+      <value>FUSE</value>
+      <footprint>timhawes:KEYSTONE_3557_AUTOMOTIVE_MINI_FUSE</footprint>
+      <libsource lib="device" part="FUSE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5807C35A</tstamp>
+    </comp>
+    <comp ref="F3">
+      <value>FUSE</value>
+      <footprint>timhawes:KEYSTONE_3557_AUTOMOTIVE_MINI_FUSE</footprint>
+      <libsource lib="device" part="FUSE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5807C3A3</tstamp>
+    </comp>
+    <comp ref="F4">
+      <value>FUSE</value>
+      <footprint>timhawes:KEYSTONE_3557_AUTOMOTIVE_MINI_FUSE</footprint>
+      <libsource lib="device" part="FUSE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5807C3EF</tstamp>
+    </comp>
+    <comp ref="F5">
+      <value>FUSE</value>
+      <footprint>timhawes:KEYSTONE_3557_AUTOMOTIVE_MINI_FUSE</footprint>
+      <libsource lib="device" part="FUSE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5807C42A</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>CONN_01X02</value>
+      <footprint>timhawes:POWERPOLE_01X02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5807C5F2</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="CONN_01X02">
+      <description>Connector 01x02</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="FUSE">
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">FUSE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(P1-Pad1)">
+      <node ref="P4" pin="1"/>
+      <node ref="P2" pin="1"/>
+      <node ref="P1" pin="1"/>
+      <node ref="P3" pin="1"/>
+      <node ref="P5" pin="1"/>
+    </net>
+    <net code="2" name="Net-(F3-Pad1)">
+      <node ref="F3" pin="1"/>
+      <node ref="P3" pin="2"/>
+    </net>
+    <net code="3" name="Net-(F4-Pad1)">
+      <node ref="F4" pin="1"/>
+      <node ref="P4" pin="2"/>
+    </net>
+    <net code="4" name="Net-(F5-Pad1)">
+      <node ref="F5" pin="1"/>
+      <node ref="P5" pin="2"/>
+    </net>
+    <net code="5" name="Net-(F2-Pad1)">
+      <node ref="F2" pin="1"/>
+      <node ref="P2" pin="2"/>
+    </net>
+    <net code="6" name="Net-(F1-Pad2)">
+      <node ref="F1" pin="2"/>
+      <node ref="F3" pin="2"/>
+      <node ref="F4" pin="2"/>
+      <node ref="F5" pin="2"/>
+      <node ref="F2" pin="2"/>
+    </net>
+    <net code="7" name="Net-(F1-Pad1)">
+      <node ref="F1" pin="1"/>
+      <node ref="P1" pin="2"/>
+    </net>
+  </nets>
+</export>
